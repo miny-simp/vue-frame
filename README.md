@@ -1,6 +1,19 @@
 # vue-frame
-my first vue demo
 
-1、安装环境  cnpm install
+## Project setup
+```
+npm install
+```
 
-2、运行  cnpm run dev
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+#1.0.1
+1. axios封装
+2. loading 效果整体封装

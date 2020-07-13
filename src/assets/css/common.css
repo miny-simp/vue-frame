@@ -1,0 +1,23 @@
+.boxcss {
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(132, 150, 180, 0.2);
+  border-radius: 5px;
+}
+.pageContent {
+  display: flex;
+}
+.pageContent .left {
+  width: 350px;
+}
+.pageContent .left .panel-top {
+  padding: 10px;
+  display: flex;
+}
+.pageContent .left .panel-top h4 {
+  flex: 1;
+}
+.pageContent .right {
+  width: calc(100% - 350px);
+  margin-left: 15px;
+}
+/*# sourceMappingURL=./common.css.map */
