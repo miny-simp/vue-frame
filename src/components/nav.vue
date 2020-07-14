@@ -5,9 +5,9 @@
       class="el-menu-vertical-demo"
       @open="handleOpen"
       @close="handleClose"
-      background-color="#e9ebea"
-      text-color="#03564c"
-      active-text-color="#03564c"
+      background-color="#454d58"
+      text-color="#fff"
+      active-text-color="#fff"
       router>
       <el-submenu index="1">
         <template slot="title">
@@ -97,7 +97,7 @@ export default {
   width: 100%;
 }
 .el-menu-item.is-active {
-  /* background: #a3bfb9!important; */
+  background: #5797e5!important;
   font-weight: bold;
 }
 </style>

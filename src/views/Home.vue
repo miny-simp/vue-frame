@@ -35,16 +35,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .el-header {
-  /* background-color: #B3C0D1; */
-  background: url('~@/assets/images/header_bg.png') center center no-repeat;
+  background-color: #454d58;
+  /* background: url('~@/assets/images/header_bg.png') center center no-repeat; */
   height: 70px;
   color: #fff;
 }
 
-.el-aside {
-  background-color: #D3DCE6;
-  color: #333;
-}
+/* .el-aside {
+  background-color: #454d58;
+  color: #fff;
+} */
 
 .el-main {
   background-color: #E9EEF3;
