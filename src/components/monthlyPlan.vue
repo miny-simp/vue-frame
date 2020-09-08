@@ -1,17 +1,17 @@
 <template>
   <div>
-    <el-form :inline="true" :model="monthForm" class="plan-form-inline" size="mini">
-      <el-form-item label="线路名称">
-        <el-input v-model="monthForm.user" placeholder="线路名称"></el-input>
+    <el-form :inline="true" :model="searchForm" ref="searchForm" class="plan-form-inline" size="mini">
+      <el-form-item label="线路名称" prop="user">
+        <el-input v-model="searchForm.user" placeholder="线路名称"></el-input>
       </el-form-item>
-      <el-form-item label="任务类型">
-        <el-select v-model="monthForm.region" placeholder="任务类型">
+      <el-form-item label="任务类型" prop="region">
+        <el-select v-model="searchForm.region" placeholder="任务类型">
           <el-option v-for="item in options" :key="item.item_code" :label="item.item_value" :value="item.item_code"></el-option>
         </el-select>
       </el-form-item>
-      <el-form-item label="日期范围">
+      <el-form-item label="日期范围" prop="value2">
         <el-date-picker
-          v-model="monthForm.value2"
+          v-model="searchForm.value2"
           type="daterange"
           range-separator="至"
           start-placeholder="开始日期"
@@ -21,7 +21,7 @@
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit">查询</el-button>
-        <el-button @click="resetForm('monthForm')">重置</el-button>
+        <el-button @click="resetForm('searchForm')">重置</el-button>
       </el-form-item>
     </el-form>
     <el-table :data="gridData" stripe height="100%" border style="width: 100%">
@@ -35,7 +35,7 @@
   export default {
     data() {
       return {
-        monthForm: {
+        searchForm: {
           user: '',
           region: '',
           value2: ''

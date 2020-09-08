@@ -3,8 +3,7 @@
     <el-row>
       <el-col :span="12">
         <div class="header-title">
-          <p class="header-title-text">管控平台</p>
-          <p class="header-title-tip">——诚信立足，创新致远</p>
+          <p class="header-title-text">后台管理系统</p>
         </div>
       </el-col>
       <el-col :span="12">
@@ -45,11 +44,7 @@ export default {
 .header-title p.header-title-text {
   font-size: 18px;
   font-weight: bold;
-  margin-top: 7px;
-  margin-bottom: 2px;
-}
-.header-title p.header-title-tip {
-  font-size: 14px;
+  line-height: 60px;
 }
 .el-dropdown-link {
   cursor: pointer;
