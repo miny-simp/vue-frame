@@ -12,12 +12,11 @@ const interfaceFile = {
     return axios.post(`${base.dw}/checklogin`, JSON.stringify(params));
   },
   detail () {
-    return axios.get(`${base.bd}/json/unit.json`);
+    // get传参
+    return axios.get(`${base.bd}/json/unit.json`, { params: params, headers: {'showLoading': false} });
   },
   articleDetail (id, params) {
-    return axios.get(`${base.sq}/topic/${id}`, {
-      params: params        
-    });
+    return axios.get(`${base.sq}/topic/${id}`, { params: params });
   },
   //项目列表
   projectList() {
